@@ -44,12 +44,14 @@
                </select>
             </p>
             <p><label for="issue">Finance Issue:</label>
-                <span><input type="checkbox" id="loan">
+                <span><input type="checkbox" id="loan" value="Loan">
                 <label for="loan">Loan</label>
-                <input type="checkbox" id="cards">
+                <input type="checkbox" id="cards" value="Credit Card">
                 <label for="cards">Credit Card</label>
-                <input type="checkbox" id="emi">
+                <input type="checkbox" id="emi" value="EMI">
                 <label for="emi">EMI</label></span>
+                <input type="checkbox" id="all" value="All" checked>
+                <label for="all">All</label></span>
             </p>
             <p>
                 <label for="file">Upload file</label>
@@ -81,20 +83,23 @@
       const mobileTxt = document.getElementById("mobile").value;
       const emailTxt = document.getElementById("email").value;
       const solutionTxt = document.getElementById("solution").value;
-
-      const loanTxt = document.getElementById("loan").value;
-      const cardsTxt = document.getElementById("cards").value;
-      const emiTxt = document.getElementById("emi").value;
-
       const fileTxt = document.getElementById("file").value;
+
+      if(document.getElementById("loan").checked) {
+        const checkTxt = document.getElementById("loan").value;
+       } else if(document.getElementById("cards").checked) {
+        checkTxt = document.getElementById("cards").value;
+       } else if(document.getElementById("emi").checked) {
+         checkTxt = document.getElementById("emi").value;
+       } else {
+         checkTxt = document.getElementById("all").value;
+       }
     
       sessionStorage.setItem("nameItem", nameTxt);
       sessionStorage.setItem("mobileItem", mobileTxt);
       sessionStorage.setItem("emailItem", emailTxt);
       sessionStorage.setItem("solutionItem", solutionTxt);
-      sessionStorage.setItem("loanItem", loanTxt);
-      sessionStorage.setItem("cardsItem", cardsTxt);
-      sessionStorage.setItem("emiItem", emiTxt);
+      sessionStorage.setItem("checkItem", checkTxt);
       sessionStorage.setItem("fileItem", fileTxt);
       return;
      }
