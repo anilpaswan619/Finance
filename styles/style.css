@@ -1,35 +1,29 @@
 * {
-    font-family: Arial, Helvetica, sans-serif;
-    
+    font-family:Georgia, 'Times New Roman', Times, serif;
     }
-
 .header {
     background-color:rgb(9, 50, 75);
     text-align: center;  
     position: fixed;
     width: 100%;
-    height: 100px;
+    height: 20%;
     color:whitesmoke;   
     top: 0px;
     left: 0px;
-    }
-
-.form{
+    }  
+.form {
     width: 100%;
     height:510px;
     margin-top: 100px;
-   
     position: absolute;
     left: 0px;
     top: 0px;
     background-image: url("../image/background.jpg");
     background-repeat: no-repeat;
     background-size: cover;
-    background-size: 100% 100%;
-    
-}
+    background-size: 100% 100%;   
+    }
 .inside-form {
-    
     background-color: rgb(9, 50, 75);
     width: 430px;
     height: 400px;
@@ -37,10 +31,8 @@
     margin-top: 30px;
     margin-left: 30px;
     color: whitesmoke;
-    border-radius: 10px;
-  
-    
-}
+    border-radius: 10px;  
+    }
 .feilds {
     margin-left: 10px;
     width:42%;
@@ -48,34 +40,28 @@
     outline: none;
     border: none;
     border-radius:20px; 
-}
-
+    }
 .feilds:focus, .feilds:focus{
-      border: 2px solid rgb(17, 14, 170);
-      
-  }
-  input[type="submit"]:hover, input[type="reset"]:hover {
-      background-color: rgb(17, 14, 170);
-      color: white;
-      cursor: pointer;
-  }
-
+    border: 2px solid rgb(17, 14, 170);   
+    }
+input[type="submit"]:hover, input[type="reset"]:hover {
+    background-color: rgb(17, 14, 170);
+    color: white;
+    cursor: pointer;
+    }
 #name, #mobile, #email {
-    margin-left: 50px;
-}
+  margin-left: 50px;
+  }
 input[type="submit"], input[type="reset"] {
     margin-top: 50px;
-}
+    }
 .required {
     color:red;
-   
-}
+    }
 #para {
     font-size: small;
     margin-top: 50px;
-}
-
-
+    }
 .footer {
     background-color:rgb(9, 50, 75);
     text-align: center;  
@@ -93,5 +79,6 @@ ul li {
     height: 19px;
     height: 19px;
     }
-
-
+#thankyou {
+    color:seagreen;
+    }
