@@ -31,13 +31,14 @@
 .inside-form {
     
     background-color: rgb(9, 50, 75);
-    width: 400px;
-    height: 370px;
+    width: 430px;
+    height: 400px;
     padding: 20px;
-    margin-top: 40px;
-    margin-left: 50px;
+    margin-top: 30px;
+    margin-left: 30px;
     color: whitesmoke;
     border-radius: 10px;
+  
     
 }
 .feilds {
@@ -71,6 +72,7 @@ input[type="submit"], input[type="reset"] {
 }
 #para {
     font-size: small;
+    margin-top: 50px;
 }
 
 
